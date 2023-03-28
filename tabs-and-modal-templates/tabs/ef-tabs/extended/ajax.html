@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Effective Tabs</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+		<link rel="stylesheet" href="../css/demo.css">
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/ef-tabs.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src="../js/jquery.transit.js"></script>
+		<script src="../js/ef-tabs.js"></script>
+		<script>
+	      
+	    </script>
+
+	</head>
+
+	<body class="bg-blue">
+		<div class="body">
+			<section>
+				<div class="ef-tabs ef-tabs-style-bar" data-effect="slidedn_left_slideup_right">
+					<nav>
+						<ul>
+							<li><a href="#section-bar-1"><i class="fa fa-video-camera"></i><span>Video and Text</span></a></li>
+							<li><a href="#section-bar-2"><i class="fa fa-map-marker"></i><span>Google Map</span></a></li>
+							<li><a href="#section-bar-3"><i class="fa fa-info"></i><span>iFrame Content</span></a></li>
+							<li><a href="#section-bar-4"><i class="fa fa-youtube-square"></i><span>Youtube and Vimeo</span></a></li>
+							<li><a href="#section-bar-5"><i class="fa fa-gear"></i><span>Settings</span></a></li>
+						</ul>
+					</nav>
+					<div class="content-wrap">
+						<section id="section-bar-1">
+							<div class="grid-row">
+								<div class="grid-col grid-col-6">
+									<h2>Heading Text</h2>
+									<p>Jelly beans <strong>caramels</strong> gummi bears topping Soufflé jelly-o jelly beans candy bonbon. Liquorice cupcake donut lollipop pie candy canes jelly cotton candy. Gummies liquorice toffee wafer lollipop brownie jujubes jelly-o ice cream. Marzipan chocolate bonbon. Tiramisu chupa chups icing marzipan jelly beans jelly pie dragée soufflé. Chocolate cake croissant cake pastry jujubes gingerbread pie. Pastry jelly carrot cake. Ice cream liquorice candy apple pie.</p>
+								</div>
+								<div class="grid-col grid-col-6">
+									<iframe width="500" height="315" src="https://www.youtube.com/embed/fwkJtgVswgM" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</section>
+
+						<section id="section-bar-2">
+							<div class="grid-row">
+								<div class="grid-col grid-col-12">
+									<div id="map"></div>
+									<div class="map-info">
+										Ahmedabad is the fastest growing city<br>the world and the best city to live<br>in India according to recent reports, <br>which shows the incredibility of the city.
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section id="section-bar-3">
+							<div class="iframe">
+								<iframe src="http://www.apple.com/" frameborder="0" scrolling="auto" height="1400" class="e-frame"></iframe>
+							</div>
+						</section>
+
+						<section id="section-bar-4">
+							<div class="grid-row">
+								<div class="grid-col grid-col-6">
+									<iframe width="500" height="315" src="https://www.youtube.com/embed/fwkJtgVswgM" frameborder="0" allowfullscreen></iframe>
+								</div>
+								<div class="grid-col grid-col-6">
+									<iframe src="https://player.vimeo.com/video/71546824?color=f8efea&title=0&byline=0&portrait=0" width="500" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								</div>
+							</div>
+						</section>
+
+						<section id="section-bar-5">
+							<div id="ajax" data-content-url="content.html"></div>
+						</section>
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+			</section>
+		</div>
+	</body>
+</html>

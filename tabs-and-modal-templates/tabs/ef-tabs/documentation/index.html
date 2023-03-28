@@ -1,0 +1,688 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Effective Tabs Documentation</title>
+		
+		<meta name="description" content="Thanks for purchasing our Plugin. In the following sections we will explain how to set up and use Effective Tabs easiest way possible.Although there're a lot of things written in this documentation, this plugin itself is not hard to use. This file is more of a reference if you do not know what to do.
+		If you have any questions that are beyond the scope of this help file, please feel free to ask your questions.">
+		<meta name="author" content="ThemeSelection">
+		<meta name="copyright" content="ThemeSelection">
+		<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+		<meta name="date" content="2015-08-4T00:00:00+03:00">
+		
+		<link rel="stylesheet" href="css/main.css">
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.scrollTo.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script>document.createElement('section');var duration='500',easing='swing';</script>
+		<script src="js/main.js"></script>
+	</head>
+	<body >
+		<article>
+			<div class="document_content">
+				<!-- overview -->
+				<section id="overview">
+					<h1>Effective Tabs Documentation</h1>
+					<ul class="no-bullets">
+						<li>Created: 07/18/2018</li>
+						<li>By: ThemeSelection</li>
+						<li>Email: <a href="mailto:themeselection@gmail.com">themeselection@gmail.com</a></li>
+					</ul>
+					<p>Effective Tabs is a animated, responsive solution for creating beautiful tabbed navigation. It has different layouts, Animations, responsive design, 20 color schemes and can be easily integrated to any design.</p>
+				</section>
+				<!-- overview -->
+				
+				<!-- integration -->
+				<section id="integration">
+					<h2>Integration</h2>
+					<hr/>
+					<ol>
+						<li>Download the zipped pack from <a href="http://themeselection.net">ThemeSelection</a> and extract to a folder on your computer.</li>
+						<li>You need to include necessary css and js files to your project.
+	<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/demo.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/font-awesome.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/ef-tabs.css&quot;&gt;
+	
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/jquery.transit.js"&gt;&lt;/script&gt;
+&lt;script src="js/ef-tabs.js"&gt;&lt;/script&gt;</pre>
+						</li>
+						<li>Copy HTML code from any of the files.</li>
+						<li>Now, You can replace demo content with yours.</li>
+						<li>And Here you go :) </li>
+					</ol>
+				</section>
+				<!-- integration -->
+				
+				<!-- html structure -->
+				<section id="html">
+					<h2>HTML structure</h2>
+					<hr/>
+					<p>The HTML structure of the tabs consists of radios, checkbox, label and list.</p>
+					<p><b>Add below code to show radio button.</b></p>
+<pre>
+&lt;div class="row"&gt;
+	&lt;div class="radio"&gt;
+		&lt;input type="radio" value="radio1" name="check" id="radio1" /&gt;
+		&lt;label for="radio1"&gt;Radio1&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class="radio"&gt;
+		&lt;input type="radio" value="radio2" name="check" id="radio2"/&gt;
+		&lt;label for="radio2"&gt;Radio2&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>	
+					<p>&nbsp;</p>
+					<p><b>Add below code to show Checkbox.</b></p>
+<pre>
+&lt;div class="row"&gt;
+	&lt;div class="checkbox"&gt;
+		&lt;input type="checkbox" name="agree" id="checkbox" /&gt;
+		&lt;label for="checkbox"&gt;Check box Text Here.&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				</section>
+				<!-- html structure -->
+				
+				<!-- css structure -->
+				<section id="css">
+					<h2>CSS structure</h2>
+					<hr/>
+					<p>Effective Tabs includes 23 css files. 3 css Files are required and other 20 css files color scheme.</p>
+					<p><b> Required CSS Files.</b></p>
+					<ol>
+						<li><strong>demo.css</strong> - Demo Styles.</li>
+						<li><strong>ef-tabs.css</strong> - Effective Tabs Main Stylesheet.</li>
+						<li><strong>font-awesome.min.css</strong> - To Display Icons.</li>
+					</ol>
+					<p>The file "ef-tabs.css" contains all of the specific styling and separated into sections:</p>
+					<ul>
+						<li>Font</li>
+						<li>Tabs CSS</li>
+						<li>Nav</li>
+						<li>Content</li>
+						<li>Fallback</li>
+						<li>grid system</li>
+						<li>typography</li>
+						<li>Icons</li>
+						<li>Individual tab styles </li>
+					</ul>
+					<p><b> Color Schemes</b></p>
+					<p> Check color schemes at <a href="#schemes">Color Schemes</a></p>
+					<p>If you would like to edit any section, find the appropriate label in the CSS file.</p>
+				</section>
+				<!-- css structure -->
+				
+				<!-- Tabs Style -->
+				<section id="tabs">
+					<h2>Tabs Styles</h2>
+					<hr/>
+					<p>There are 14 different Tabs Styles. To use any of them, you need to add the appropriate class to tabs container. All available styles and classes listed in the table below.</p>
+					<table>
+						<tbody><tr>
+							<th>Tabs Style</th>
+							<th>Class Name</th>
+						</tr>
+						<tr>
+							<td>Bar</td>
+							<td>ef-tabs-style-bar</td>
+						</tr>
+						<tr>
+							<td>Circle</td>
+							<td>ef-tabs-style-circle</td>
+						</tr>
+						<tr>
+							<td>Circle Fill</td>
+							<td>ef-tabs-style-circlefill</td>
+						</tr>
+						<tr>
+							<td>Fill UP</td>
+							<td>ef-tabs-style-fillup</td>
+						</tr>
+						<tr>
+							<td>Flip</td>
+							<td>ef-tabs-style-flip</td>
+						</tr>
+						<tr>
+							<td>Icon Box</td>
+							<td>ef-tabs-style-iconbox</td>
+						</tr>
+						<tr>
+							<td>Icon Fall</td>
+							<td>ef-tabs-style-iconfall</td>
+						</tr>
+						<tr>
+							<td>Line Box</td>
+							<td>ef-tabs-style-linebox</td>
+						</tr>
+						<tr>
+							<td>Line Move</td>
+							<td>ef-tabs-style-linemove</td>
+						</tr>
+						<tr>
+							<td>Line Triangle</td>
+							<td>ef-tabs-style-linetriangle</td>
+						</tr>
+						<tr>
+							<td>Shape</td>
+							<td>ef-tabs-style-shape</td>
+						</tr>
+						<tr>
+							<td>Top Line</td>
+							<td>ef-tabs-style-topline</td>
+						</tr>
+						<tr>
+							<td>Tzoid</td>
+							<td>ef-tabs-style-tzoid</td>
+						</tr>
+						<tr>
+							<td>Underline</td>
+							<td>ef-tabs-style-underline</td>
+						</tr>
+					</tbody></table>
+				<p>
+					You need to add this class at outer wrapper of navigation and content area. Let's say, you want to add <b>Bar</b> tabs :
+				</p>
+<pre>
+&lt;div class="ef-tabs ef-tabs-style-bar"&gt;
+	&lt;nav&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+	&lt;div class="content-wrap"&gt;
+		&lt;section&gt;&lt;/section&gt;
+		&lt;section&gt;&lt;/section&gt;
+		&lt;section&gt;&lt;/section&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+				</section>
+				<!-- Tabs Style -->
+				
+				<!-- typography -->
+				<section id="typography">
+				<h2>Typography</h2>
+				<p><b>Add below code to Ordered List with Sub List.</b></p>
+<pre>
+&lt;ol&gt;
+	&lt;li&gt;Croissant topping apple pie&lt;/li&gt;
+	&lt;li&gt;Sweet cookie pie
+		&lt;ol&gt;
+			&lt;li&gt;Croissant topping apple pie&lt;/li&gt;
+			&lt;li&gt;Sweet cookie pie&lt;/li&gt;
+			&lt;li&gt;Croissant topping apple pie chocolate cake&lt;/li&gt;
+		&lt;/ol&gt;
+	&lt;/li&gt;
+	&lt;li&gt;Croissant topping apple pie chocolate cake&lt;/li&gt;
+	&lt;li&gt;Carrot cake dessert jelly beans &lt;/li&gt;
+	&lt;li&gt;Gummi bears pie bear claw sesame&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+					<p><b>Add below code to Unordered List with Sub List.</b></p>
+<pre>
+&lt;ul&gt;
+	&lt;li&gt;Croissant topping apple pie&lt;/li&gt;
+	&lt;li&gt;Sweet cookie pie
+		&lt;ul&gt;
+			&lt;li&gt;Croissant topping apple pie&lt;/li&gt;
+			&lt;li&gt;Sweet cookie pie&lt;/li&gt;
+			&lt;li&gt;Croissant topping apple pie chocolate cake&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;Croissant topping apple pie chocolate cake&lt;/li&gt;
+	&lt;li&gt;Carrot cake dessert jelly beans &lt;/li&gt;
+	&lt;li&gt;Gummi bears pie bear claw sesame&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+				</section>
+				<!-- typography -->
+
+				<!-- animations -->
+				<section id="animation">
+					<h2>Animations</h2>
+					<hr/>
+					<p>There are <b>30+</b> different Tab Content Animation. To use any of them, we have used a data attribute named <b>data-effect</b>. you need to add the appropriate class to this attribute. All available Effects and Attribute names listed below.</p>
+					<table>
+						<tbody><tr>
+							<th>Attribute Name</th>
+							<th>Animation Details</th>
+						</tr>
+						<tr>
+							<td>fade_left_fade_right</td>
+							<td>Fade Out from left Fade In from Right</td>
+						</tr>
+						<tr>
+							<td>fade_right_fade_left</td>
+							<td>Fade Out from Right Fade In from Left</td>
+						</tr>
+						<tr>
+							<td>fade_slide_from_bottom</td>
+							<td>Fade Out and Slide from bottom</td>
+						</tr>
+						<tr>
+							<td>fade_slide_from_left</td>
+							<td>Fade Out and Slide from left</td>
+						</tr>
+						<tr>
+							<td>fade_slide_from_right</td>
+							<td>Fade Out and Slide from right</td>
+						</tr>
+						<tr>
+							<td>fall</td>
+							<td>Fall From Right-top</td>
+						</tr>
+						<tr>
+							<td>flip_bottom</td>
+							<td>Flip From bottom</td>
+						</tr>
+						<tr>
+							<td>flip_left</td>
+							<td>Flip From left</td>
+						</tr>
+						<tr>
+							<td>flip_right</td>
+							<td>Flip From right</td>
+						</tr>
+						<tr>
+							<td>flip_top</td>
+							<td>Flip From top</td>
+						</tr>
+						<tr>
+							<td>glue_left_slide_from_right</td>
+							<td>Glue left and Slide to back from right</td>
+						</tr>
+						<tr>
+							<td>glue_right_slide_from_left</td>
+							<td>Glue right and Slide to back from left</td>
+						</tr>
+						<tr>
+							<td>glue_top_slide_from_bottom</td>
+							<td>Glue top and Slide to back from bottom</td>
+						</tr>
+						<tr>
+							<td>move_bottom_scale_up</td>
+							<td>Move bottom Scale UP</td>
+						</tr>
+						<tr>
+							<td>move_left_scale_up</td>
+							<td>Move left Scale UP</td>
+						</tr>
+						<tr>
+							<td>move_right_scale_up</td>
+							<td>Move right Scale UP</td>
+						</tr>
+						<tr>
+							<td>newspaper</td>
+							<td>Newspaper throw</td>
+						</tr>
+						<tr>
+							<td>push_bottom_pull_top</td>
+							<td>Push Bottom Pull from top</td>
+						</tr>
+						<tr>
+							<td>push_left_pull_right</td>
+							<td>Push left Pull from right</td>
+						</tr>
+						<tr>
+							<td>push_right_pull_left</td>
+							<td>Push right Pull from left</td>
+						</tr>
+						<tr>
+							<td>push_top_pull_bottom</td>
+							<td>Push top Pull from bottom</td>
+						</tr>
+						<tr>
+							<td>scale_down_scale_down</td>
+							<td>Both scale down</td>
+						</tr>
+						<tr>
+							<td>scale_down_scale_up</td>
+							<td>Scale down and Scale up</td>
+						</tr>
+						<tr>
+							<td>scale_down_slide_from_bottom</td>
+							<td>Scale down and Slide from bottom</td>
+						</tr>
+						<tr>
+							<td>scale_down_slide_from_left</td>
+							<td>Scale down and Slide from left</td>
+						</tr>
+						<tr>
+							<td>scale_down_slide_from_right</td>
+							<td>Scale down and Slider from right</td>
+						</tr>
+						<tr>
+							<td>scale_down_slide_left-slide_left_scale_up</td>
+							<td>Scale down-Slide left and Slide left-Scale up</td>
+						</tr>
+						<tr>
+							<td>scale_down_slide_right-slide_right_scale_up</td>
+							<td>Scale down-Slide right and Slide right-Scale up</td>
+						</tr>
+						<tr>
+							<td>scale_up_scale_up</td>
+							<td>Both scale up</td>
+						</tr>
+						<tr>
+							<td>side_left_side_right</td>
+							<td>Move out from left side and move in from right</td>
+						</tr>
+						<tr>
+							<td>side_right_side_left</td>
+							<td>Move out from right side and move in from left</td>
+						</tr>
+					</tbody></table>
+				<p>
+					Now,you must have the question that how to use this, Right? Lemme show you
+				</p>
+<pre>
+&lt;div class="ef-tabs ef-tabs-style-bar"  data-effect="fade_left_fade_right"&gt;
+	&lt;nav&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+	&lt;div class="content-wrap"&gt;
+		&lt;section&gt;&lt;/section&gt;
+		&lt;section&gt;&lt;/section&gt;
+		&lt;section&gt;&lt;/section&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+				</section>
+				<!-- animations -->
+	
+
+				<!-- schemes -->
+				<section id="schemes">
+					<h2>Color schemes</h2>
+					<hr/>
+					<p>There are 19 color schemes in Effective Tabs. <strong>Shamrock</strong> is the default scheme and to choose other you need to include appropriate css file.</p>
+					<p><b> Color Scheme CSS Files.</b></p>
+					<ol>
+						<li><strong>ef-tabs-amber.css</strong> - Amber Color Styles.</li>
+						<li><strong>ef-tabs-black.css</strong> - Black Color Styles.</li>
+						<li><strong>ef-tabs-blue.css</strong> - Blue Color Styles.</li>
+						<li><strong>ef-tabs-blue-grey.css</strong> - Blue-Grey Color Styles.</li>
+						<li><strong>ef-tabs-brown.css</strong> - Brown Color Styles.</li>
+						<li><strong>ef-tabs-deep-orange.css</strong> - Deep Orange Color Styles.</li>
+						<li><strong>ef-tabs-deep-purple.css</strong> - Deep Purple Color Styles.</li>
+						<li><strong>ef-tabs-green.css</strong> - Green Color Styles.</li>
+						<li><strong>ef-tabs-grey.css</strong> - Grey Color Styles.</li>
+						<li><strong>ef-tabs-indigo.css</strong> - Indigo Color Styles.</li>
+						<li><strong>ef-tabs-light-blue.css</strong> - Light Blue Color Styles.</li>
+						<li><strong>ef-tabs-light-green.css</strong> - Light Green Color Styles.</li>
+						<li><strong>ef-tabs-lime.css</strong> - Lime Color Styles.</li>
+						<li><strong>ef-tabs-orange.css</strong> - Orange Color Styles.</li>
+						<li><strong>ef-tabs-pink.css</strong> - Pink Color Styles.</li>
+						<li><strong>ef-tabs-purple.css</strong> - Purple Color Styles.</li>
+						<li><strong>ef-tabs-red.css</strong> - Red Color Styles.</li>
+						<li><strong>ef-tabs-teal.css</strong> - Teal Color Styles.</li>
+						<li><strong>ef-tabs-yellow.css</strong> - Yellow Color Styles.</li>
+					</ol>
+
+					<p>For example,To Include Black Color Scheme use <strong>ef-tabs-black.css</strong>. 
+					Add Below code:</p>
+<pre>&lt;link rel="stylesheet" href="../css/ef-tabs.css"&gt;
+&lt;link rel="stylesheet" href="../css/ef-tabs-black.css"&gt;</pre>
+				</section>
+				<!-- schemes -->
+				<!-- extended -->
+				<section id="extended">
+					<h2>Extended Tabs</h2>
+					<hr/>
+					<!-- Grids -->
+					<h3>Grids</h3>
+					<p>You can set content in Grid view also.You just need to apply classes.</p>
+<pre>&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-1"&gt;&lt;div class="inner"&gt;1/12&lt;/div&gt;&lt;/div&gt;
+	&lt;div class="grid-col grid-col-11"&gt;&lt;div class="inner"&gt;11/12&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-2"&gt;&lt;div class="inner"&gt;2/12&lt;/div&gt;&lt;/div&gt;
+	&lt;div class="grid-col grid-col-10"&gt;&lt;div class="inner"&gt;10/12&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-3"&gt;&lt;div class="inner"&gt;3/12&lt;/div&gt;&lt;/div&gt;
+	&lt;div class="grid-col grid-col-9"&gt;&lt;div class="inner"&gt;9/12&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-4"&gt;&lt;div class="inner"&gt;4/12&lt;/div&gt;&lt;/div&gt;
+	&lt;div class="grid-col grid-col-8"&gt;&lt;div class="inner"&gt;8/12&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-5"&gt;&lt;div class="inner"&gt;5/12&lt;/div&gt;&lt;/div&gt;
+	&lt;div class="grid-col grid-col-7"&gt;&lt;div class="inner"&gt;7/12&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-6"&gt;&lt;div class="inner"&gt;6/12&lt;/div&gt;&lt;/div&gt;
+	&lt;div class="grid-col grid-col-6"&gt;&lt;div class="inner"&gt;6/12&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col"&gt;&lt;div class="inner"&gt;12/12&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+				<p>&nbsp;</p>
+
+				<!-- Offset Grids -->
+				<h3>Offset Grids</h3>
+				<p>You can set Offset Grid view also.You just need to apply classes.</p>
+<pre>&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-11 grid-col-offset-1"&gt;&lt;div class="inner"&gt;11/12 offset 1&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-10 grid-col-offset-2"&gt;&lt;div class="inner"&gt;10/12 offset 2&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-9 grid-col-offset-3"&gt;&lt;div class="inner"&gt;9/12 offset 3&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-8 grid-col-offset-4"&gt;&lt;div class="inner"&gt;8/12 offset 4&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-7 grid-col-offset-5"&gt;&lt;div class="inner"&gt;7/12 offset 5&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-6 grid-col-offset-6"&gt;&lt;div class="inner"&gt;6/12 offset 6&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-5 grid-col-offset-7"&gt;&lt;div class="inner"&gt;5/12 offset 7&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-4 grid-col-offset-8"&gt;&lt;div class="inner"&gt;4/12 offset 8&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-3 grid-col-offset-9"&gt;&lt;div class="inner"&gt;3/12 offset 9&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-2 grid-col-offset-10"&gt;&lt;div class="inner"&gt;2/12 offset 10&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid-row"&gt;
+	&lt;div class="grid-col grid-col-1 grid-col-offset-11"&gt;&lt;div class="inner"&gt;1/12 offset 11&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+				<p>&nbsp;</p>
+				
+
+ 				<!-- AJAX -->
+				<h3>AJAX</h3>
+				<p>You can set AJAX call also. Set AJAX call page url in <b>data-content-url</b> attribute. You have to add some code like below : </p>
+<pre>&lt;div id="ajax" data-content-url="content.html"&gt;&lt;/div&gt;</pre>
+				<p><span class="required">Required* </span><b>You have to set <i>id="ajax"</i>.</b></p>
+				<p>I have this content.html file in same folder so I have not used full URL.</p>
+				<p>&nbsp;</p>
+
+				<!-- Map -->
+				<h3>Map</h3>
+				<p>We have used google map js to diaplay map.
+				you need to add script for Map</p>
+<pre>&lt;script src="https://maps.googleapis.com/maps/api/js"&gt;&lt;/script&gt;</pre>
+				<p>Now, Map in HTML. you have to add latitude and longitude in <b>data-lat</b> and <b>data-lng</b> respectively. You can also add information to display when you click on map pin. </p>
+<pre>&lt;div id="map" data-lat="23.023348" data-lng="72.575623"&gt;&lt;/div&gt;
+&lt;div class="map-info"&gt;Map Info&lt;/div&gt;</pre>
+				<p><span class="required">Required* </span><b>You have to set <i>id="map" </i> and info class as <i> class="map-info"</i>.</b></p>
+				<p>&nbsp;</p>
+ 
+				<!-- Image -->
+				<h3>Image</h3>
+				<p>To Include image you need to add simple <b>img</b> tag. That image will be displayed with full width.</p>
+				<p>&nbsp;</p>
+				
+				<!-- Video -->
+				<h3>Video</h3>
+				<p>Here, you can add youtube and vimeo videos. To add this videos you need to add just iFrame of the video.</p>
+				<p>To add YouTube video, search/open video on YouTube. Find <b>Share</b> link and get it's <b>Embed</b> iFrame.</p>
+				<p>To add Vimeo video, search/open video on Vimeo. You will find <b>Share</b> link on right side of the video. When you click on that link it will popup a window which contains <b>Embed</b> iFrame. </p>
+				<p>&nbsp;</p>
+				
+				<!-- iFrame -->
+				<h3>iFrame</h3>
+				<p>You can load whole site to the tab. For this add code below :</p>
+<pre>&lt;div class="iframe"&gt;
+	&lt;iframe src="http://www.apple.com/" frameborder="0" scrolling="auto" height="1400" class="e-frame"&gt;&lt;/iframe&gt;
+&lt;/div&gt;</pre>
+				<p>&nbsp;</p>
+				
+				<!-- Form -->
+				<h3>Form Fields</h3>
+				<p>You can use all the input fields. You can check <a href="#html">Radio Button</a> and <a href="#html">Checkbox</a> also. </p>
+				<p>&nbsp;</p>
+
+				<!-- social -->
+				<h3>Social Section</h3>
+				<p>You can add social sections as per your requirements. Let's see code of Social buttons.</p>
+<pre>&lt;a href="http://www.twitter.com/" target="_blank" class="twitter"&gt;
+&lt;span class="icon-twitter"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;div class="social-info"&gt;
+        &lt;div class="social-title"&gt;Follow Us&lt;/div&gt;
+        &lt;span class="social-count"&gt;150 followers&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/a&gt;</pre>
+				<p>Here we have used FontAwesome Icons.</p>
+				
+				<p>&nbsp;</p>
+				<!-- steps -->
+				<h3>Steps </h3>
+				<p>You can set Previous Next steps using anchor tag. You have to use classes for previous and next links.</p>
+				<p><span class="required">Required* </span><b>You have to set <i>class="next" </i> for next link and <i> class="previous"</i> for previous link.</b></p>
+<pre>
+&lt;div class="ef-tabs ef-tabs-style-bar"  data-effect="fade_left_fade_right"&gt;
+	&lt;nav&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#sec-1"&gt;Home&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#sec-2"&gt;About&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#sec-3"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+	&lt;div class="content-wrap"&gt;
+		&lt;section id="sec-1"&gt;&lt;a href="#" class="next"&gt;&lt;span&gt;Next step&lt;/span&gt;&lt;/a&gt; →&lt;/p&gt;&lt;/section&gt;
+		&lt;section id="sec-2"&gt;← &lt;a href="#" class="previous"&gt;Previous step&lt;/a&gt | &lt;a href="#" class="next"&gt;Next step&lt;/a&gt; →&lt;/section&gt;
+		&lt;section id="sec-3"&gt;&lt;a href="#" class="previous"&gt;Next step&lt;/a&gt; →&lt;/section&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+			<p>No need to set href value. Just set it to '#'.</p>
+
+
+
+				</section>
+				<!-- extended -->
+	
+				
+				<!-- credits -->
+				<section id="credits">
+					<h2>Credits</h2>
+					<hr/>
+					<h3>Icon and font Credits</h3>
+					<ul>
+						<li>
+							<a href="http://www.google.com/fonts/specimen/Roboto">Roboto</a>
+						</li>
+						<li>
+							<a href="http://fontawesome.io/">Font Awesome</a> by Dave Gandy</a>
+						</li>
+					</ul>
+					<h3>Image and Video Credits</h3>
+					<ul>
+						<li><a href="https://pixabay.com/">Pixabay</a></li>
+						<li><a href="https://www.youtube.com">YouTube</a></li>
+						<li><a href="https://vimeo.com">Vimeo</a></li>
+					</ul>
+				</section>
+				<!-- credits -->
+				
+				<!-- Thank You -->
+				<section id="thankyou">
+						<div class="page-header">
+							<h2>Thank You</h2>
+							<hr/>
+						</div>
+						<div>
+							Once again, thank you so much for purchasing this tabs. We&#39;d be glad to help you if you have any questions relating to Effective Tabs.
+						</div>
+						<div>
+							&nbsp;</div>
+						<div>
+							&nbsp;</div>
+						<div>
+							Regards,</div>
+						<div>
+							ThemeSelection Team</div>
+				</section>
+				<!-- Thank You -->
+			</div>
+		</article>
+		
+		<aside>
+			<!-- logo -->
+			<img src="images/thumbnail.png" alt="" />
+			<!-- logo -->
+			
+			<!-- main nav -->
+			<nav id="main-nav">
+				<ul>
+					<li><a class="current" href="#overview">Overview</a></li>
+					<li><a href="#integration">Integration</a></li>
+					<li><a href="#html">HTML structure</a></li>
+					<li><a href="#css">CSS structure</a></li>
+					<li><a href="#tabs">Tabs Styles</a></li>
+					<li><a href="#typography">Typography</a></li>
+					<li><a href="#animation">Animation</a></li>
+					<li><a href="#schemes">Color schemes</a></li>
+					<li><a href="#extended">Extended Tabs</a></li>
+					<li><a href="#credits">Credits</a></li>
+					<li><a href="#thankyou">Thank You</a></li>
+				</ul>
+			</nav>
+			<!-- main nav -->
+			
+			<!-- copyrights -->
+			<p>Created by <a href="http://themeselection.com" target="_blank">ThemeSelection</a></p>
+			<!-- copyrights -->
+		</aside>
+	</body>
+</html>

@@ -1,0 +1,89 @@
+a{color:#FFEB3B;}
+.ef-tabs nav li a:hover,.ef-tabs nav li a:focus{color: #FFEB3B;}
+/* Bar */
+.ef-tabs-style-bar nav li.tab-current a{background: #FFEB3B;color: #3e464c;}
+/* Circle */
+.ef-tabs-style-circle nav li.tab-current a{color: #FFEB3B;}
+.ef-tabs-style-circle nav li::before{border: 1px solid #FFEB3B;}
+/* Circle Fill */
+.ef-tabs-style-circlefill nav li a:hover,.ef-tabs-style-circlefill nav li a:focus{color: #FFF;}
+.ef-tabs-style-circlefill nav ul li {border-right: 1px solid #FFEB3B;}
+.ef-tabs-style-circlefill nav li::before{border: 1px solid #FFEB3B;background: #FFEB3B;}
+/* Fillup */
+.ef-tabs-style-fillup nav ul li.tab-current a{color: #3e464c;}
+.ef-tabs-style-fillup nav ul li a::after{border: 1px solid #FFEB3B;background: #FFEB3B;}
+/* Flip */
+.ef-tabs-style-flip nav li.tab-current a {color: #FFEB3B;}
+/* iconbox */
+.ef-tabs-style-iconbox nav li.tab-current a {background: #FFEB3B; color:#3e464c;}
+.ef-tabs-style-iconbox nav li.tab-current a::after{border-top-color: #FFEB3B;}
+/*iconfall*/
+.ef-tabs-style-iconfall nav li.tab-current a{color: #FFEB3B;}
+.ef-tabs-style-iconfall nav li::before{background: #FFEB3B;}
+/*linebox*/
+.ef-tabs-style-linebox nav a:hover::after, .ef-tabs-style-linebox nav a:focus::after, .ef-tabs-style-linebox nav li.tab-current a::after{background: #FFEB3B;}
+.ef-tabs-style-linebox nav li.tab-current a{color: #3e464c;}
+/*linemove*/
+.ef-tabs-style-linemove nav li.tab-current a{color: #FFEB3B;}
+.ef-tabs-style-linemove nav li:last-child::before{background: #FFEB3B;}
+/*linetriangle*/
+.ef-tabs-style-linetriangle nav li.tab-current a{color: #FFEB3B;}
+/*shape*/
+.ef-tabs-style-shape nav li a {color: #3e464c;}
+.ef-tabs-style-shape nav li a:hover,.ef-tabs-style-shape nav li a:focus{color:#3e464c;}
+.ef-tabs-style-shape nav ul li.tab-current a:hover,.ef-tabs-style-shape nav ul li.tab-current a:focus{color:#FFEB3B;}
+.ef-tabs-style-shape nav li a:hover span {background-color: #FFEB3B;}
+.ef-tabs-style-shape nav li a:hover svg {fill: #FFEB3B;}
+.ef-tabs-style-shape nav li.tab-current a span {background: #fff;color: #FFEB3B;}
+.ef-tabs-style-shape nav li.tab-current a:hover svg{ fill: #FFF;}
+/* topline*/
+.ef-tabs-style-topline nav li.tab-current {border-top-color: #FFEB3B;}
+.ef-tabs-style-topline nav li.tab-current a {box-shadow: inset 0 3px 0 #FFEB3B;color: #FFEB3B;}
+/*tzoid*/
+.ef-tabs-style-tzoid nav ul li a:hover, .ef-tabs-style-tzoid nav ul li a:focus {color: #FFEB3B;}
+.ef-tabs-style-tzoid nav ul li.tab-current a {color: #3e464c;}
+.ef-tabs-style-tzoid nav ul li.tab-current a::after {background-color: #FFEB3B;}
+/*underline*/
+.ef-tabs-style-underline nav li.tab-current a {color: #FFEB3B;}
+.ef-tabs-style-underline nav li a::after{background: #FFEB3B;}
+/*Input Fields*/
+input.btn{background: #FFEB3B; color: #000;}
+input.input:focus, input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus {
+	border-color: rgba(255,235,59, 0.8); 
+	box-shadow: inset 0 1px rgba(34, 25, 25, 0.15),0 1px rgba(255, 255, 255, 0.8),0 0 14px rgba(255,235,59, 0.35);
+    -moz-box-shadow: inset 0 1px rgba(34,25,25,0.15),0 1px rgba(255,255,255,0.8),0 0 14px rgba(255,235,59, 0.35);
+    -webkit-box-shadow: inset 0 1px rgba(34, 25, 25, 0.15),0 1px rgba(255, 255, 255, 0.8),0 0 14px rgba(255,235,59, 0.35);
+}
+/* Social */
+.twitter,.facebook, .gplus, .linkedin{
+	background: rgba(255,235,59, 0.7);
+	border: 1px solid #FFEB3B;
+	box-shadow: inset 0 1px rgba(34, 25, 25, 0.15),0 1px rgba(255, 255, 255, 0.8),0 0 14px rgba(255,235,59, 0.35);
+	color: #000 !important;
+}
+a.twitter:hover, a.facebook:hover, a.linkedin:hover, a.gplus:hover{
+	color: #fff !important;
+}
+blockquote{
+	border-left: 5px solid #FFEB3B;
+}
+.dropcap{
+	color: #FFEB3B; 
+}
+.highlight {
+    background-color: #FFEB3B; 
+    color: #fff;
+}
+
+/*Tabel*/
+table th{
+	background-color: rgba(255,235,59, 0.9); 
+    color: #74777b;
+}
+th,td{
+	border: 1px solid #FFEB3B;
+}
+table tr.alt td{
+	background-color: rgba(255,235,59, 0.2); 
+	color: #000; 
+}

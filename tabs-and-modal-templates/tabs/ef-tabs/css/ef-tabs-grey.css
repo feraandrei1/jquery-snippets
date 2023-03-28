@@ -1,0 +1,84 @@
+a{color:#9E9E9E;}
+.ef-tabs nav li a:hover,.ef-tabs nav li a:focus{color: #9E9E9E;}
+/* Bar */
+.ef-tabs-style-bar nav li.tab-current a{background: #9E9E9E;color: #FFF;}
+/* Circle */
+.ef-tabs-style-circle nav li.tab-current a{color: #9E9E9E;}
+.ef-tabs-style-circle nav li::before{border: 1px solid #9E9E9E;}
+/* Circle Fill */
+.ef-tabs-style-circlefill nav li a:hover,.ef-tabs-style-circlefill nav li a:focus{color: #FFF;}
+.ef-tabs-style-circlefill nav ul li {border-right: 1px solid #9E9E9E;}
+.ef-tabs-style-circlefill nav li::before{border: 1px solid #9E9E9E;background: #9E9E9E;}
+/* Fillup */
+.ef-tabs-style-fillup nav ul li a::after{border: 1px solid #9E9E9E;background: #9E9E9E;}
+/* Flip */
+.ef-tabs-style-flip nav li.tab-current a {color: #9E9E9E;}
+/* iconbox */
+.ef-tabs-style-iconbox nav li.tab-current a {background: #9E9E9E; color:#FFF;}
+.ef-tabs-style-iconbox nav li.tab-current a::after{border-top-color: #9E9E9E;}
+/*iconfall*/
+.ef-tabs-style-iconfall nav li.tab-current a{color: #9E9E9E;}
+.ef-tabs-style-iconfall nav li::before{background: #9E9E9E;}
+/*linebox*/
+.ef-tabs-style-linebox nav a:hover::after, .ef-tabs-style-linebox nav a:focus::after, .ef-tabs-style-linebox nav li.tab-current a::after{background: #9E9E9E;}
+.ef-tabs-style-linebox nav li.tab-current a{color: #FFF;}
+/*linemove*/
+.ef-tabs-style-linemove nav li.tab-current a{color: #9E9E9E;}
+.ef-tabs-style-linemove nav li:last-child::before{background: #9E9E9E;}
+/*linetriangle*/
+.ef-tabs-style-linetriangle nav li.tab-current a{color: #9E9E9E;}
+/*shape*/
+.ef-tabs-style-shape nav li a {color: #fff;}
+.ef-tabs-style-shape nav li a:hover,.ef-tabs-style-shape nav li a:focus{color:#FFF;}
+.ef-tabs-style-shape nav ul li.tab-current a:hover,.ef-tabs-style-shape nav ul li.tab-current a:focus{color:#9E9E9E;}
+.ef-tabs-style-shape nav li a:hover span {background-color: #9E9E9E;}
+.ef-tabs-style-shape nav li a:hover svg {fill: #9E9E9E;}
+.ef-tabs-style-shape nav li.tab-current a span {background: #fff;color: #9E9E9E;}
+.ef-tabs-style-shape nav li.tab-current a:hover svg{ fill: #FFF;}
+/* topline*/
+.ef-tabs-style-topline nav li.tab-current {border-top-color: #9E9E9E;}
+.ef-tabs-style-topline nav li.tab-current a {box-shadow: inset 0 3px 0 #9E9E9E;color: #9E9E9E;}
+/*tzoid*/
+.ef-tabs-style-tzoid nav ul li a:hover, .ef-tabs-style-tzoid nav ul li a:focus {color: #9E9E9E;}
+.ef-tabs-style-tzoid nav ul li.tab-current a {color: #FFF;}
+.ef-tabs-style-tzoid nav ul li.tab-current a::after {background-color: #9E9E9E;}
+/*underline*/
+.ef-tabs-style-underline nav li.tab-current a {color: #9E9E9E;}
+.ef-tabs-style-underline nav li a::after{background: #9E9E9E;}
+/*Input Fields*/
+input.btn{background: #9E9E9E;}
+input.input:focus, input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus {
+	border-color: rgba(158,158,158, 0.8); 
+	box-shadow: inset 0 1px rgba(34, 25, 25, 0.15),0 1px rgba(255, 255, 255, 0.8),0 0 14px rgba(158,158,158, 0.35);
+    -moz-box-shadow: inset 0 1px rgba(34,25,25,0.15),0 1px rgba(255,255,255,0.8),0 0 14px rgba(158,158,158, 0.35);
+    -webkit-box-shadow: inset 0 1px rgba(34, 25, 25, 0.15),0 1px rgba(255, 255, 255, 0.8),0 0 14px rgba(158,158,158, 0.35);
+}
+/* Social */
+.twitter,.facebook, .gplus, .linkedin{
+	background: rgba(158,158,158, 0.7);
+	border: 1px solid #9E9E9E;
+	box-shadow: inset 0 1px rgba(34, 25, 25, 0.15),0 1px rgba(255, 255, 255, 0.8),0 0 14px rgba(158,158,158, 0.35);
+}
+blockquote{
+	border-left: 5px solid #9E9E9E;
+}
+.dropcap{
+	color: #9E9E9E; 
+}
+.highlight {
+    background-color: #9E9E9E; 
+    color: #fff;
+}
+
+/*Tabel*/
+table th{
+	background-color: rgba(158,158,158, 0.9); 
+    color: #fff;
+}
+th,td{
+	border: 1px solid #9E9E9E;
+}
+table tr.alt td{
+	background-color: rgba(158,158,158, 0.2); 
+	color: #000; 
+}

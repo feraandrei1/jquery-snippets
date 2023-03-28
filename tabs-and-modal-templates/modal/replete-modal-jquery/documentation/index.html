@@ -1,0 +1,1142 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Replete Modal Documentation</title>
+		
+		<meta name="description" content="Thanks for purchasing our Plugin. In the following sections we will explain how to set up and use Replete Modal easiest way possible.Although there're a lot of things written in this documentation, this plugin itself is not hard to use. This file is more of a reference if you do not know what to do.
+		If you have any questions that are beyond the scope of this help file, please feel free to ask your questions.">
+		<meta name="author" content="ThemeSelection">
+		<meta name="copyright" content="ThemeSelection">
+		<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+		<meta name="date" content="2015-08-4T00:00:00+03:00">
+		
+		<link rel="stylesheet" href="css/main.css">
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.scrollTo.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script>document.createElement('section');var duration='500',easing='swing';</script>
+		<script src="js/main.js"></script>
+	</head>
+	<body >
+		<article>
+			<div class="document_content">
+				<!-- overview -->
+				<section id="overview">
+					<h1>Replete Modal Documentation</h1>
+					<ul class="no-bullets">
+						<li>Created: 20/08/2021</li>
+						<li>By: <a href="https://themeselection.com/" target="_blank">ThemeSelection</a></li>
+					</ul>
+					<p>Replete Modal is a user-friendly, fully customizable, responsive jQuery popup modal to take any HTML content, including images, videos, SVG icons,forms and display it in a clean organized and responsive popup. It is easy, flexible, powerful to create professional looking popup modal. This plugin features plenty of layouts, CSS transitions, 9 Position, 40+ animations, 5 Overlay, 10 Modal Layouts, 10 Modal Types, 35+ SVG Icons and much more.</p>
+					<p>If you have any questions that are beyond the scope of this documentation, please feel free to email via my user page contact form <a href="https://themeselection.com/" target="_blank">here</a>.</p>
+				</section>
+				<!-- overview -->
+
+				<!-- integration -->
+				<section id="integration">
+					<h2>Integration</h2>
+					<hr/>
+					<ol>
+						<li>Download the zipped pack from <a href="https://themeselection.com/products/replete-modal-jquery-modal-popup-script">ThemeSelection</a> and extract to a folder on your computer.</li>
+						<li>You need to include necessary css and js files to your project.
+	<pre>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/animate.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/replete-modal.css&quot;&gt;
+	
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/replete-modal.min.js"&gt;&lt;/script&gt;</pre>
+						</li>
+						<li>Copy code of any example modal.</li>
+						<li>Replace demo content with yours.</li>
+					</ol>
+				</section>
+				<!-- integration -->
+
+				<!-- script structure -->
+				<section id="script">
+					<h2>Script structure</h2>
+					<hr/>
+					<p>The script structure of the modal is very easy. Add arguments and it's value according to requirement.</p>
+<pre>$('.className').on('click',function(){
+	rplm({
+		title: "Title Goes Here",
+		text: "Any Content Or HTML structure",
+		html: true,
+		showCancelButton: true
+	});
+});</pre>
+				<p> Here, rplm({ ... }); is required to use for Replete Modal.</p>
+				</section>
+				<!-- script structure -->
+				
+				<!-- Configuration -->
+				<section id="config">
+					<h2>Modal Configuration</h2>
+					<hr/>
+					<p>There are many configuration for replete modal. To use any of them, you need to add the appropriate argument to the script. All available configuration options listed in the table below.</p>
+					<table>
+						<tbody><tr>
+							<th>Configuration</th>
+							<th>Default Value</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>title</td>
+							<td>null(required)</td>
+							<td>The title of the modal. It can be added to the object under the key "title".</td>
+						</tr>
+						<tr>
+							<td>text</td>
+							<td>null</td>
+							<td>A description for the modal. You can also add full html content like form, heading, paragraph, etc. When you set image tag inside text please add height of the image so that pop up will get exact height of the pop up. For Example: <b>&lt;img src='..' height="XXX" /&gt;</b></td>
+						</tr>
+						<tr>
+							<td>type</td>
+							<td>null</td>
+							<td>The type of the modal. Replete Modal comes with 4 built-in types which will show a icon animation: <b>"warning", "error", "success", "info"</b> and <b>"map"</b>. You can also set it as "input" to get a prompt modal and set it as "map" to get google map.</td>
+						</tr>
+						<tr>
+							<td>allowEscapeKey</td>
+							<td>true</td>
+							<td>If set to true, the user can dismiss the modal by pressing the Escape key.</td>
+						</tr>
+						<tr>
+							<td>allowOutsideClick</td>
+							<td>false</td>
+							<td>If set to true, the user can dismiss the modal by clicking outside the modal.</td>
+						</tr>
+						<tr>
+							<td>backgroundScroll</td>
+							<td>false</td>
+							<td>Set to true to scroll background of the modal.</td>
+						</tr>
+						<tr>
+							<td>width</td>
+							<td>478px</td>
+							<td>Default modal width is "478px". You can set custom width for your modal in pixels.</td>
+						</tr>
+						<tr>
+							<th colspan="3"> Button Configuration</th>
+						</tr>
+						<tr>
+							<td>showCancelButton</td>
+							<td>false</td>
+							<td>If set to true, a "Cancel" button will be shown, which the user can click on to dismiss the modal.</td>
+						</tr>
+						<tr>
+							<td>showConfirmButton</td>
+							<td>true</td>
+							<td>If set to false, the "OK/Confirm" button will be hidden. Make sure you set a timer or set allowOutsideClick to true when using this, so user can't get confuse.</td>
+						</tr>
+						<tr>
+							<td>confirmButtonText</td>
+							<td>OK</td>
+							<td>Use this to change the text on the "Confirm" button. If showCancelButton is set as true, the confirm button will automatically show "Confirm" instead of "OK".</td>
+						</tr>
+						<tr>
+							<td>confirmButtonColor</td>
+							<td>#4ECDC4</td>
+							<td>Use this to change the background color of the "Confirm" button[in HEX value]</td>
+						</tr>
+						<tr>
+							<td>cancelButtonText</td>
+							<td>Cancel</td>
+							<td>Use this to change the text on the "Cancel" button.</td>
+						</tr>
+						<tr>
+							<td>showLoaderOnConfirm</td>
+							<td>false</td>
+							<td>Set to true to disable the buttons and show that something is loading.</td>
+						</tr>
+						<tr>
+							<td>closeOnConfirm</td>
+							<td>true</td>
+							<td>Set to false if you want the modal to stay open even if the user presses the "Confirm" button. This is especially useful if the function attached to the "Confirm" button is another Modal.</td>
+						</tr>
+						<tr>
+							<td>closeOnCancel</td>
+							<td>true</td>
+							<td>Same as "closeOnConfirm", but on close "Cancel" button.</td>
+						</tr>
+						<tr>
+							<th colspan="3"> Close Icon/Text Configuration</th>
+						</tr>
+						<tr>
+							<td>showCloseButton</td>
+							<td>false</td>
+							<td>Set to True if you want to show close icon(X)/text(close) on Top Right corner of the Modal.</td>
+						</tr>
+						<tr>
+							<td>closeButtonText</td>
+							<td>null</td>
+							<td>Close Button On the Top Right side of the modal. Use this to change the text of close button.</td>
+						</tr>
+						<tr>
+							<td>closeButtonColor</td>
+							<td>black</td>
+							<td>Close button text color can be "black" or "white".</td>
+						</tr>
+						<tr>
+							<td>closeButtonWithInModal</td>
+							<td>false</td>
+							<td>Set to true to show Close button, on top right corner, inside the Modal.</td>
+						</tr>
+						<tr>
+							<th colspan="3"> Set SVG Icons</th>
+						</tr>
+						<tr>
+							<td>svgIcon</td>
+							<td>null</td>
+							<td>You can set SVG Icons to display animated Icons on Replete modal. <a href="#svg">Here</a> is list of all SVG icons name.</td>
+						</tr>
+						<tr>
+							<th colspan="3">Icon on modal</th>
+						</tr>
+						<tr>
+							<td>imageUrl</td>
+							<td>null</td>
+							<td>Add a customized icon for the modal. Should contain a string with the path to the image.</td>
+						</tr>
+						<tr>
+							<td>imageSize</td>
+							<td>80x80</td>
+							<td>If imageUrl is set, you can specify imageSize to describes how big you want the icon to be in px. Pass in a string with two values separated by an "x". The first value is the width, the second is the height.</td>
+						</tr>
+						<tr>
+							<th colspan="3">Set Timer</th>
+						</tr>
+						<tr>
+							<td>timer</td>
+							<td>null</td>
+							<td>Auto close timer of the modal. Set in milliseconds.</td>
+						</tr>
+						<tr>
+							<th colspan="3">HTML Content</th>
+						</tr>
+						<tr>
+							<td>html</td>
+							<td>false</td>
+							<td>If set to true, will not escape title and text parameters. For Example, If you added html tags in text argument then you need to set this true.</td>
+						</tr>
+						<tr>
+							<th colspan="3">Animation Configuration</th>
+						</tr>
+						<tr>
+							<td>animation</td>
+							<td>true</td>
+							<td>If set to false, the modal's animation will be disabled. Possible values : pop (default), fadeIn, swing, etc. <a href="#animation">Here</a> are more options of animation.</td>
+						</tr>
+						<tr>
+							<th colspan="3">Modal Positions</th>
+						</tr>
+						<tr>
+							<td>position</td>
+							<td>center</td>
+							<td>Positions of the modal on the screen. Possible values : topLeft,bottomRight,etc. <a href="#position">Here </a>are more options of positions.</td>
+						</tr>
+						<tr>
+							<th colspan="3">Modal Overlay Configuration</th>
+						</tr>
+						<tr>
+							<td>overlay</td>
+							<td>default</td>
+							<td>Background overlay styles. Possible values : black, white, etc. <a href="#overlay">Here</a> are more options of overlay.</td></td>
+						</tr>
+						<tr>
+							<td>customOverlayColor</td>
+							<td>#46B9B1</td>
+							<td>If you set overlay to "custom", You can set your own custom color for Overlay.</td>
+						</tr>
+						<tr>
+							<th colspan="3">Delay &amp; Duration</th>
+						</tr>
+						<tr>
+							<td>delay</td>
+							<td>null</td>
+							<td>Time to delay modal open in seconds.</td>
+						</tr>
+						<tr>
+							<td>duration</td>
+							<td>null</td>
+							<td>Set number of seconds should take to open modal.</td>
+						</tr>
+						<tr>
+							<th colspan="3">Modal Layout Configuration</th>
+						</tr>
+						<tr>
+							<td>modalNOverlay</td>
+							<td>null</td>
+							<td>Set modal layout changes using values : white, black, etc. <a href="#modal">Here</a> are more options of Modal.</td>
+						</tr>
+						<tr>
+							<td>allowPadding</td>
+							<td>true</td>
+							<td>This option will allow padding to modal. Set it "false", if you don't want padding to modal.</td>
+						</tr>
+						<tr>
+							<td>customModalColor</td>
+							<td>#8CD4F5</td>
+							<td>If you set modalNOverlay to "custom", You can set your own custom color for Modal.</td>
+						</tr>
+						<tr>
+							<th colspan="3">Default Input Configurations</th>
+						</tr>
+						<tr>
+							<td>inputType</td>
+							<td>text</td>
+							<td>Change the type of the input field when using type: "input" (this can be useful if you want users to type in their password for example).</td>
+						</tr>
+						<tr>
+							<td>inputPlaceholder</td>
+							<td>null</td>
+							<td>When using the input-type, you can specify a placeholder to help the user.</td>
+						</tr>
+						<tr>
+							<td>inputValue</td>
+							<td>null</td>
+							<td>Specify a default text value that you want your input to show when using type: "input"</td>
+						</tr>
+						<tr>
+							<th colspan="3">Map Configuration</th>
+						</tr>
+						<tr>
+							<td>lat</td>
+							<td>0</td>
+							<td>If you set type="map" then use "lat" to set latitude.</td>
+						</tr>
+						<tr>
+							<td>lng</td>
+							<td>0</td>
+							<td>If you set type="map" then use "lng" to set longitude.</td>
+						</tr>
+						<tr>
+							<td>zoom</td>
+							<td>8</td>
+							<td>If you set type="map" then use "zoom" to set zoom level of map.</td>
+						</tr>
+						<tr id="cookieConf">
+							<th colspan="3">Cookie Configuration</th>
+						</tr>
+						<tr>
+							<td>oneTimePopUp</td>
+							<td>false</td>
+							<td>If you set oneTimePopUp:true then this pop up will open only once until user remove cookie.</td>
+						</tr>
+						<tr>
+							<td>preventDialog</td>
+							<td>false</td>
+							<td>This will show a link below pop up like "Hide This Dialog Forever". And if anybody clicks that link, this popup will be blocked forever until user remove cookie.</td>
+						</tr>
+						<tr>
+							<td>cookieName</td>
+							<td>preventRepleteModal</td>
+							<td>You can change cookie name as per your site name also. But if you want more than one modal on same page and if you want to set cookie for all else it will override the cookie. </td>
+						</tr>
+						<tr>
+							<td>preventText</td>
+							<td>Hide This Dialog Forever</td>
+							<td>Change link text according to your choice.</td>
+						</tr>
+						<tr>
+							<td>preventDays</td>
+							<td>2000000000</td>
+							<td>To block cookie forever, we set "2000000000" by default. But if you want to set cookie for 30 days then please set this value to 30. </td>
+						</tr>
+					</tbody></table>
+					<p>&nbsp;</p>
+					<strong>Note: When you define custom width for your modal, you need to take care of the responsiveness of the pop up on different screen size as its coded for default width only, that is "478px".</strong>
+				</section>
+				<!-- Configuration -->
+
+				<!-- Methods -->
+				<section id="methods">
+					<h2>Modal Methods</h2>
+					<hr/>
+					<p>There are few simple but important methods for replete modal.</p>
+					<table>
+						<tbody><tr>
+							<th>Method Name</th>
+							<th>Example</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>close</td>
+							<td>rplm.close();</td>
+							<td>Close the currently open replete modal programatically.</td>
+						</tr>
+						<tr>
+							<td>showInputError</td>
+							<td>rplm.showInputError("Invalid Username!");</td>
+							<td>Show an error message after validating the input field, if the user's data is wrong/invalid.</td>
+						</tr>
+						<tr>
+							<td>enableButtons</td>
+							<td>rplm.enableButtons();</td>
+							<td>Enable user to click on the cancel and confirm buttons.</td>
+						</tr>
+						<tr>
+							<td>disableButtons</td>
+							<td>rplm.disableButtons();</td>
+							<td>Disable user to click on the cancel and confirm buttons. It will show loading.</td>
+						</tr>
+					</tbody></table>
+				</section>
+				<!-- Methods -->
+
+				<!-- Callback -->
+				<section id="callback">
+					<h2>How to Callback</h2>
+					<hr/>
+					<p>
+					Let's say, If you want to submit <b>Single Value</b> using callback :</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		.....
+		.....
+	}, function(){
+		email = $('.rplm-alert .email').val();
+	});
+});
+</pre>
+					<p>
+					If you want to submit <b>Serialized Form Fields</b> using callback :</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		.....
+		.....
+	}, function(){
+		$('.rplm-alert form.login').serialize();
+	});
+});
+</pre>
+					<p>
+					If you want to submit <b>Form</b> using callback :</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		.....
+		.....
+	}, function(){
+		$('.rplm-alert form.login').submit();
+	});
+});
+</pre>
+					<p>
+					If you want to use callback on <b>submit</b> &amp; <b>Cancel</b> :</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		.....
+		.....
+	}, function(isConfirm){
+		if (isConfirm) {
+			// Confirm Callback
+		}
+		else{
+			// Cancel Callback
+		}
+	});
+});
+</pre>
+					<p>
+					If you want to <b>submit data </b>using <b>AJAX</b> :</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		.....
+		.....
+	},function(){
+		// Ajax call
+		$.ajax({
+			url: "test.php", // File Path
+			data: $('.rplm-alert form.CLASSNAME').serialize(),
+			method: "post", // post/get
+		}).done(function() {
+			// Completion Message
+		});
+	});
+});
+</pre>
+				
+				</section>
+				<!-- Callback -->
+
+				<!-- Events -->
+				<section id="events">
+					<h2>Events</h2>
+					<hr/>
+					<h4>On PageLoad Modal :</h4>
+<pre>
+$( document ).ready(function() {
+   rplm({
+		.....
+		.....
+	});
+});
+</pre>
+					<h4>On MouseLeave Modal :</h4>
+<pre>
+$('html').mouseleave(function() {
+	rplm({
+		.....
+		.....
+	});
+});
+</pre>
+				</section>
+				<!-- Callback -->
+
+				<!-- Cookie -->
+				<section id="cookie">
+					<h2>Set Cookie</h2>
+					<hr/>
+					<p>To set cookie on load and on click of link, use options described in configuration. You can check all options <a href="#cookieConf">Here</a>. Here you can see an example image of "block modal" on a link click</p>
+					<img src="images/cookie.png" alt="cookie">
+					<p>You can change link text, cookie name according to your choice else it will use default value as displayed <a href="#cookieConf">Here</a>. </p>
+					<p>
+					Let's say, you want to block modal on <b>click of the link</b> :
+				</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		title: "Block Pop-up",
+		text: "Custom Text here.",
+		<b>preventDialog: true,
+		cookieName: "blockModal",
+		preventText: "Block This Pop-up.",
+		preventDays: 30,</b>
+	});
+});
+</pre>
+				<p>This will set "blockModal" cookie for next "30" days. So you won't be able to open this dialog till 30 days.</p>
+				<h2>Display Pop up only once</h2>
+				<p>Following are the option to set up Modal to display <b>Only once</b>.</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		title: "Block Pop-up",
+		text: "Custom Text here.",
+		<b>oneTimePopUp: true,</b>
+	});
+});
+</pre>
+				</section>
+				<!-- Cookie -->
+
+				<!-- Positions -->
+				<section id="position">
+					<h2>Modal Positions</h2>
+					<hr/>
+					<p>There are 9 positions for replete modal. To use any of them, you need to add the appropriate value to the <b>position</b> attribute. All available positions and options listed in the table below.</p>
+					<table>
+						<tbody><tr>
+							<th>Argument Value</th>
+						</tr>
+						<tr>
+							<td>topLeft</td>
+						</tr>
+						<tr>
+							<td>topCenter</td>
+						</tr>
+						<tr>
+							<td>topRight</td>
+						</tr>
+						<tr>
+							<td>leftCenter</td>
+						</tr>
+						<tr>
+							<td>center</td>
+						</tr>
+						<tr>
+							<td>rightCenter</td>
+						</tr>
+						<tr>
+							<td>bottomLeft</td>
+						</tr>
+						<tr>
+							<td>bottomCenter</td>
+						</tr>
+						<tr>
+							<td>bottomRight</td>
+						</tr>
+					</tbody></table>
+				<p>
+					Let's say, you want to set modal on <b>Bottom Center</b> :
+				</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		title: "Bottom Center",
+		text: "Custom Text here.",
+		<b>position:'bottomCenter',</b>
+	});
+});
+</pre>
+				</section>
+				<!-- Positions -->
+
+				<!-- overlay -->
+				<section id="overlay">
+				<h2>Overlay</h2>
+				<p>You have to add <strong>overlay</strong> argument to set different overlay values. Check overlay options in below table.</p>
+				<table>
+					<tbody>
+						<tr>
+							<th>Argument Value</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>white</td>
+							<td>To set white Overlay with opacity. Just need to write overlay:'white'.</td>
+						</tr>
+						<tr>
+							<td>black</td>
+							<td>To set black Overlay with opacity. Just need to write overlay:'black'.</td>
+						</tr>
+						<tr>
+							<td>transparent</td>
+							<td>To set transparent Overlay with opacity. Just need to write overlay:'transparent'.</td>
+						</tr>
+						<tr>
+							<td>blur</td>
+							<td>To set blur Overlay with opacity. Just need to write overlay:'blur'. <b>You need to wrap your content with "blur-overlay" class to archive the desired blur effect. As shown in the example.</b></td>
+						</tr>
+						<tr>
+							<td>custom</td>
+							<td>To set custom Overlay with opacity. Just need to write overlay:'custom'.</td>
+						</tr>
+						<tr>
+							<td>customOverlayColor</td>
+							<td>When you set overlay:'custom' You need to set your color else it will use default. Set HEX color code, to display overlay of that color.</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					Let's say, you want to set modal overlay as <b>custom</b> :
+				</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		title: "Overlay Demo",
+		text: "Custom Text here.",
+		<b>overlay: 'custom',
+		customOverlayColor: '#FFA7EC',</b>
+	});
+});
+</pre>
+				<p> If you set <b>overlay</b> as <b>custom</b> then only <b>customOverlayColor</b> attribute will work.</p>
+				</section>
+				<!-- Overlay -->
+				<section id="modal">
+					<h2>Modal Styles</h2>
+					<hr/>
+					<p>There are some modal styles that will make the modal very attractive and you can find all the options and description in table below. Just set this option values for 'modalNOverlay' argument.</p>
+					<table>
+						<tbody>
+							<tr>
+								<th>Option Value</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td>black</td>
+								<td>This option will set black Modal and white Overlay.</td>
+							</tr>
+							<tr>
+								<td>white</td>
+								<td>This option will set white modal and black overlay</td>
+							</tr>
+							<tr>
+								<td>transparent</td>
+								<td>This option will set transparent background with white overlay</td>
+							</tr>
+							<tr>
+								<td>roundBorder</td>
+								<td>To set rounded border to the modal.</td>
+							</tr>
+							<tr>
+								<td>backShadow</td>
+								<td>To set back shadow to the modal.</td>
+							</tr>
+							<tr>
+								<td>custom</td>
+								<td>To set custom back color to the modal.</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+					Let's say, you want to set modal with <b>custom</b> color:
+					</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		title: "Overlay Demo",
+		text: "Custom Text here.",
+		<b>modalNOverlay: 'custom',
+		customModalColor: '#FFA7EC',</b>
+	});
+});
+</pre>
+					<p> If you set <b>modalNOverlay</b> as <b>custom</b> then only <b>customModalcolor</b> attribute will work.</p>
+				</section>
+
+				<!-- animations -->
+				<section id="animation">
+					<h2>Animations</h2>
+					<hr/>
+					<p>There are <b>40+</b> different Modal Animations. To use any of them,use <b>animation</b> attribute and add appropriate animation value to attribute. All available Effects and details listed below :</p>
+					<table>
+						<tbody><tr>
+							<th>Attribute Value</th>
+						</tr>
+						<tr>
+							<td>bounce</td>
+						</tr>
+						<tr>
+							<td>flash</td>
+						</tr>
+						<tr>
+							<td>pulse</td>
+						</tr>
+						<tr>
+							<td>rubberBand</td>
+						</tr>
+						<tr>
+							<td>shake</td>
+						</tr>
+						<tr>
+							<td>swing</td>
+						</tr>
+						<tr>
+							<td>tada</td>
+						</tr>
+						<tr>
+							<td>wobble</td>
+						</tr>
+						<tr>
+							<td>jello</td>
+						</tr>
+						<tr>
+							<td>bounceIn</td>
+						</tr>
+						<tr>
+							<td>bounceInDown</td>
+						</tr>
+						<tr>
+							<td>bounceInLeft</td>
+						</tr>
+						<tr>
+							<td>bounceInRight</td>
+						</tr>
+						<tr>
+							<td>bounceInUp</td>
+						</tr>
+						<tr>
+							<td>fadeIn</td>
+						</tr>
+						<tr>
+							<td>fadeInDown</td>
+						</tr>
+						<tr>
+							<td>fadeInDownBig</td>
+						</tr>
+						<tr>
+							<td>fadeInLeft</td>
+						</tr>
+						<tr>
+							<td>fadeInLeftBig</td>
+						</tr>
+						<tr>
+							<td>fadeInRight</td>
+						</tr>
+						<tr>
+							<td>fadeInRightBig</td>
+						</tr>
+						<tr>
+							<td>fadeInUp</td>
+						</tr>
+						<tr>
+							<td>fadeInUpBig</td>
+						</tr>
+						<tr>
+							<td>flipInX</td>
+						</tr>
+						<tr>
+							<td>flipInY</td>
+						</tr>
+						<tr>
+							<td>lightSpeedIn</td>
+						</tr>
+						<tr>
+							<td>rotateIn</td>
+						</tr>
+						<tr>
+							<td>rotateInDownLeft</td>
+						</tr>
+						<tr>
+							<td>rotateInDownRight</td>
+						</tr>
+						<tr>
+							<td>rotateInUpLeft</td>
+						</tr>
+						<tr>
+							<td>rotateInUpRight</td>
+						</tr>
+						<tr>
+							<td>slideInUp</td>
+						</tr>
+						<tr>
+							<td>slideInDown</td>
+						</tr>
+						<tr>
+							<td>slideInLeft</td>
+						</tr>
+						<tr>
+							<td>slideInRight</td>
+						</tr>
+						<tr>
+							<td>zoomIn</td>
+						</tr>
+						<tr>
+							<td>zoomInDown</td>
+						</tr>
+						<tr>
+							<td>zoomInLeft</td>
+						</tr>
+						<tr>
+							<td>zoomInRight</td>
+						</tr>
+						<tr>
+							<td>zoomInUp</td>
+						</tr>
+						<tr>
+							<td>rollIn</td>
+						</tr>
+					</tbody></table>
+				<p>
+					Below is the example showing how to use animation effects. Let's say, If want to set jello animation to the modal.
+				</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		title: "Jello Effect",
+		text: 'This is an example of jello effect modal.',
+		showCancelButton: true,
+		<strong>animation: 'jello',</strong>
+	});
+});
+</pre>
+				</section>
+				<!-- animations -->
+	
+				<!-- Google Map -->
+				<section id="gmap">
+					<h2>Google Map</h2>
+					<hr/>
+					<p>To implement Google map, you need to set <b>type="map"</b>, latitude, longitude and zoom level.</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		title: "Google Map",
+			text: '&lt;div id="map" style="width:100%;height:400px;"&gt;&lt;/div&gt;',
+			<strong>type: 'map',
+			lat: 23.0060,
+			lng: 72.6011,
+			zoom: 10,</strong>
+			html: true,
+	});
+});</pre>
+					<p> You need to set <strong>text='&lt;div id="map" style="width:100%;height:400px;"&gt;&lt;/div&gt;'</strong>. You can change height accordingly.</p><p>If you set <strong>type='map'</strong> then set <strong>lat(latitude)</strong>, <strong>lng(longitude)</strong> and <strong>zoom</strong> level.</p>
+				</section>
+				<!-- Google Map -->
+				<!-- YouTube & Vimeo -->
+				<section id="uv">
+					<h2>YouTube</h2>
+					<hr/>
+					<p>To add YouTube Video, you need to use some parameters like <b>youtubeID, videoHeight </b> and <b>videoWidth</b>. Check example given below :</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		title: "YouTube Video",
+			<strong>youtubeID: "YOUTUBE_VIDEO_ID", 
+		videoHeight: "YOUTUBE_VIDEO_HEIGHT",
+		videoWidth: "YOUTUBE_VIDEO_WIDTH",</strong>
+		html: true,
+	});
+});
+</pre>
+					<p>No need to create text attribute as that will be created automatically using YouTubeID,Height and Width.</p>
+
+					<br>
+					<h2>Vimeo</h2>
+					<hr/>
+					<p>To add YouTube Video, you need to use some parameters like <b>vimeoID, videoHeight </b> and <b>videoWidth</b>. Check example given below :</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		title: "Vimeo Video",
+			<strong>vimeoID: "VIMEO_VIDEO_ID", 
+		videoHeight: "VIMEO_VIDEO_HEIGHT",
+		videoWidth: "VIMEO_VIDEO_WIDTH",</strong>
+		html: true,
+	});
+});
+</pre>
+					<p>No need to create text attribute as that will be created automatically using VimeoID,Height and Width.</p>
+
+					<p><b>Check youtube and vimeo examples for better idea.</b></p>
+				</section>
+				<!-- YouTube & Vimeo -->
+
+				<!-- SVG -->
+				<section id="svg">
+					<h2>SVG Icons</h2>
+					<hr/>
+					<p>There are 35+ SVG icons in Replete Modal. To use this icon, just need to set <b>svgIcon</b> attribute and need to add svg Icon name that is displayed in below table.</p>
+					<table>
+						<tbody>
+							<tr>
+								<th>SVG Icon Name</th>
+							</tr>
+							<tr>
+								<td>browser</td>
+							</tr>
+							<tr>
+								<td>brush</td>
+							</tr>
+							<tr>
+								<td>calender</td>
+							</tr>
+							<tr>
+								<td>camera</td>
+							</tr>
+							<tr>
+								<td>clock</td>
+							</tr>
+							<tr>
+								<td>coffee</td>
+							</tr>
+							<tr>
+								<td>diamond</td>
+							</tr>
+							<tr>
+								<td>disk</td>
+							</tr>
+							<tr>
+								<td>email</td>
+							</tr>
+							<tr>
+								<td>graph</td>
+							</tr>
+							<tr>
+								<td>heart</td>
+							</tr>
+							<tr>
+								<td>home</td>
+							</tr>
+							<tr>
+								<td>lightning</td>
+							</tr>
+							<tr>
+								<td>location</td>
+							</tr>
+							<tr>
+								<td>lock</td>
+							</tr>
+							<tr>
+								<td>magnify</td>
+							</tr>
+							<tr>
+								<td>message</td>
+							</tr>
+							<tr>
+								<td>mic</td>
+							</tr>
+							<tr>
+								<td>paper</td>
+							</tr>
+							<tr>
+								<td>pencil</td>
+							</tr>
+							<tr>
+								<td>phone</td>
+							</tr>
+							<tr>
+								<td>picture</td>
+							</tr>
+							<tr>
+								<td>plane</td>
+							</tr>
+							<tr>
+								<td>present</td>
+							</tr>
+							<tr>
+								<td>robot</td>
+							</tr>
+							<tr>
+								<td>rocket</td>
+							</tr>
+							<tr>
+								<td>screen</td>
+							</tr>
+							<tr>
+								<td>settings</td>
+							</tr>
+							<tr>
+								<td>spaceship</td>
+							</tr>
+							<tr>
+								<td>storm</td>
+							</tr>
+							<tr>
+								<td>suitcase</td>
+							</tr>
+							<tr>
+								<td>tag</td>
+							</tr>
+							<tr>
+								<td>trash</td>
+							</tr>
+							<tr>
+								<td>thumbsup</td>
+							</tr>
+							<tr>
+								<td>thumbsdown</td>
+							</tr>
+							<tr>
+								<td>user</td>
+							</tr>
+							<tr>
+								<td>winner</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p>
+					Below is the example showing how to use SVG icon. Let's say, If want to set rocket icon to the modal.
+				</p>
+<pre>
+$('.className').on('click',function(){
+	rplm({
+		title: "SVG Icon",
+		text: 'SVG Demo content.',
+		<strong>svgIcon: 'rocket',</strong>
+	});
+});
+</pre>
+				</section>
+				<!-- SVG -->
+				<!-- delay -->
+				<section id="delay">
+					<h2>Delay</h2>
+					<hr/>
+					<p><strong>delay</strong> is an option that will make the modal to delay in open.</p>
+<pre>$('.className').on('click',function(){
+	rplm({
+		title: "Delay Demo",
+		text: 'Delay Demo content.',
+		<strong>delay: 1,</strong>
+	});
+});</pre>
+				<p>This will delay modal open to 1 seconds.</p>
+				</section>
+				<!-- delay -->
+
+				<!-- duration -->
+				<section id="duration">
+					<h2>Duration</h2>
+					<hr/>
+					<p><strong>duration</strong> is an option to open the modal slowly.</p>
+<pre>$('.className').on('click',function(){
+	rplm({
+		title: "Duration Demo",
+		text: 'Duration Demo content.',
+		<strong>duration: 2,</strong>
+	});
+});</pre>
+				<p>This will open modal slowly in 2 seconds.</p>
+				</section>
+				<!-- duration -->
+	
+				
+				<!-- credits -->
+				<section id="credits">
+					<h2>Credits</h2>
+					<hr/>
+					<h3>Icon and font Credits</h3>
+					<ul>
+						<li>
+							<a href="http://www.google.com/fonts/specimen/Quicksand">Quicksand</a>
+						</li>
+					</ul>
+					<h3>Image and Video Credits</h3>
+					<ul>
+						<li><a href="https://pixabay.com/">Pixabay</a></li>
+						<li><a href="https://www.youtube.com">YouTube</a></li>
+						<li><a href="https://vimeo.com">Vimeo</a></li>
+					</ul>
+				</section>
+				<!-- credits -->
+				
+				<!-- Thank You -->
+				<section id="thankyou">
+						<div class="page-header">
+							<h2>Thank You</h2>
+							<hr/>
+						</div>
+						<div>
+							Once again, thank you so much for purchasing Replete Modal - jQuery Modal Popup Script. We&#39;d be glad to help you if you have any questions relating to Replete Modal.
+						</div>
+						<div>
+							&nbsp;</div>
+						<div>
+							&nbsp;</div>
+						<div>
+							Regards,</div>
+						<div>
+							ThemeSelection Team</div>
+				</section>
+				<!-- Thank You -->
+			</div>
+		</article>
+		
+		<aside>
+			<!-- logo -->
+			<img src="images/thumbnail.png" alt="" />
+			<!-- logo -->
+			
+			<!-- main nav -->
+			<nav id="main-nav">
+				<ul>
+					<li><a class="current" href="#overview">Overview</a></li>
+					<li><a href="#integration">Integration</a></li>
+					<li><a href="#script">Script structure</a></li>
+					<li><a href="#config">Configuration</a></li>
+					<li><a href="#methods">Methods</a></li>
+					<li><a href="#callback">CallBack</a></li>
+					<li><a href="#events">Events</a></li>
+					<li><a href="#cookie">Set Cookie</a></li>
+					<li><a href="#position">Positions</a></li>
+					<li><a href="#overlay">Overlay</a></li>
+					<li><a href="#modal">Modal Style</a></li>
+					<li><a href="#animation">Animation</a></li>
+					<li><a href="#gmap">Google Map</a></li>
+					<li><a href="#uv">YouTube &amp; Vimeo</a></li>
+					<li><a href="#svg">SVG Icons</a></li>
+					<li><a href="#delay">Delay</a></li>
+					<li><a href="#duration">Duration</a></li>
+					<li><a href="#credits">Credits</a></li>
+					<li><a href="#thankyou">Thank You</a></li>
+				</ul>
+			</nav>
+			<!-- main nav -->
+			
+			<!-- copyrights -->
+			<p>Created by <a href="https://themeselection.com" target="_blank">ThemeSelection</a></p>
+			<!-- copyrights -->
+		</aside>
+	</body>
+</html>
